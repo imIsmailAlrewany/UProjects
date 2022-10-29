@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    background: #f23557;
+    color: #f8eae5;
+}
+::selection {
+    background-color: transparent;
+}
+#app{
+    margin: 20px 20px 0;
+    height: calc(100vh - 20px);
+    font-size: 20px;
+    overflow: hidden;
+}
+.entry{
+    background: rgba(59, 74, 107, .4);
+    overflow: auto;
+    padding: 10px;
+}
+.headline {
+    -webkit-text-stroke: 2px rgb(133, 14, 18);
+    -moz-text-stroke: 2px rgb(133, 14, 18);
+    -o-text-stroke: 2px rgb(133, 14, 18);
+}
+.headline, .zip, .feel {
+    margin-bottom: 20px;
+}
+.feel, .zip, .entry {
+    display: grid;
+    row-gap: 3px;
+}
+label{
+    display:block;
+    font-size: 27px;
+}
+input{
+    display:block;
+    height: 40px;
+    font-size: 20px;
+}
+button{
+    height: 50px;
+    background: #3b4a6b;
+    font-size: 26px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #344d80;
+}
+textarea{
+    font-size: 20px;
+    height: 100px;
+}
+input::placeholder, textarea::placeholder, button, .entry, input, textarea {
+    color: coral;
+}
+input, textarea {
+    background-color: #eee;
+    outline: 0;
+    padding: 5px;
+}
+input, button, textarea {
+    border: none;
+}
+input, button, textarea, .entry {
+    max-width: 400px;
+}
